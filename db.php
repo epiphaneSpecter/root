@@ -1,5 +1,5 @@
 <?php
-// include("./db.php");
+
 $username = "root";
 $password = "root";
 
@@ -12,11 +12,3 @@ try {
    echo "OUllaaaa " . $error->getMessage();
    die();
 }
-//header
-include("shared/header.php");
-
-//body
-
-
-//footer
-include("shared/footer.php");
