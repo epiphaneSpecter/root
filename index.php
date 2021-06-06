@@ -1,22 +1,12 @@
 <?php
-// include("./db.php");
-$username = "root";
-$password = "root";
+include("shared/db.php");
 
-try {
-    $db = new PDO('mysql:host=localhost;dbname=root', $username, $password);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // var_dump($db->errorInfo());
-
-} catch (PDOException $error){
-   echo "OUllaaaa " . $error->getMessage();
-   die();
-}
 //header
 include("shared/header.php");
 
 //body
 
+include("views/index.view.php");
 
 //footer
 include("shared/footer.php");
